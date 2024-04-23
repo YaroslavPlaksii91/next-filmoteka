@@ -9,7 +9,6 @@
   "plugins": [
     "prettier",
     "@typescript-eslint"
-    // "plugin:react-hooks/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "rules": {
