@@ -10,12 +10,9 @@ const Home: React.FC = async () => {
 
   return (
     <div>
-      <Link href={ROUTES.MOVIES}>Movies</Link>
-      <Link href={ROUTES.SHOWS}>TV shows</Link>
-
       <h2>Currently in Cinemas</h2>
 
-      <ul className="grid grid-cols-4 gap-y-10">
+      <ul className="grid grid-cols-5 gap-5">
         {movies.map(movie => (
           <li key={movie.id}>
             <Link href={`${ROUTES.MOVIES}/${movie.id}`}>
