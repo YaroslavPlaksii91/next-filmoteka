@@ -11,6 +11,7 @@ export const FETCH_OPTIONS = Object.freeze({
 });
 
 export const ROUTES = Object.freeze({
+  HOME: '/',
   MOVIES: '/movies',
   SHOWS: '/shows',
 });
