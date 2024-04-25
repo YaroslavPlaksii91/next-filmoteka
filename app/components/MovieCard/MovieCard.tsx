@@ -6,19 +6,18 @@ import type { MovieCardProps } from './types';
 
 const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg h-[100%]">
+    <div className="rounded-lg overflow-hidden shadow-lg">
       <Image
-        className="w-full min-h-[576px]"
         src={`${BASE_IMG_URL}${movie.poster_path}`}
         alt={movie.title}
-        width={384}
-        height={75}
+        width={0}
+        height={0}
+        sizes="100vw"
+        className="w-full h-auto"
       />
       <div className="px-6 py-4">
-        <h3 className="font-bold text-xl mb-2">{movie.title}</h3>
-        <p className="text-gray-700 text-base">{movie.overview}</p>
-      </div>
-      <div className="px-6 py-4">
+        <h3 className="font-bold text-xl mb-2 text-center">{movie.title}</h3>
+        <p className="text-gray-700 text-base mb-8">{movie.overview}</p>
         <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
           Release Date: {movie.release_date}
         </span>
