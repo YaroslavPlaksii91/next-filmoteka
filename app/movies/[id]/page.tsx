@@ -1,12 +1,12 @@
 import MovieCard from '@/app/components/MovieCard/MovieCard';
-import { fetchMovie } from '@/app/services/fetchMovies';
+import { fetchMovieDetails } from '@/app/services/fetchMovies';
 import { BASE_IMG_URL } from '@/app/utils/constants';
 import React from 'react';
 
 import type { MoviePageProps } from './types';
 
 const MoviePage: React.FC<MoviePageProps> = async ({ params: { id } }) => {
-  const movie = await fetchMovie(id);
+  const movie = await fetchMovieDetails(id);
 
   return (
     <div
