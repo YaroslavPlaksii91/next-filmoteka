@@ -17,7 +17,12 @@ export const ROUTES = Object.freeze({
 });
 
 export const API_ENDPOINTS = Object.freeze({
+  TRENDING: `${BASE_API_URL}trending`,
   NOW_PLAYING_MOVIES: `${BASE_API_URL}movie/now_playing`,
   POPULAR_MOVIES: `${BASE_API_URL}movie/popular`,
+  TOP_RATED_MOVIES: `${BASE_API_URL}movie/top_rated`,
+  UPCOMING_MOVIES: `${BASE_API_URL}movie/upcoming`,
   MOVIE_BY_ID: `${BASE_API_URL}movie`,
+  MOVIE_GENRES: `${BASE_API_URL}genre/movie/list`,
+  TV_GENRES: `${BASE_API_URL}genre/tv/list`,
 });
